@@ -13,3 +13,13 @@ def union_parent(parent ,a ,b):
         parent[b] = a
     else :
         parent[a] = b
+
+for i in range(1 ,v+1):
+    parent[i]  = i
+
+
+for edge in edges:
+    cost , a , b = edge
+    if find_parent(parent , a) != find_parent(parent ,b):
+        union_parent(parent , a ,b)
+        result += cost

@@ -14,3 +14,21 @@ prioirty queue : 가장 우선순위가 높은 데이터
 -현재 가장 가까운 노드를  저장하기 위해서 힙 자료구조를 추가적으로 이용 ,
 -현재 최단거리가 가장 짧은 노드를 선택해야 하므로 최소 힙을 사용    
 '''
+import heapq
+INF = int(le9)
+
+
+def dijkstra(start):
+    q = []
+    heapq.heappush(q (0 , start))
+    distance[start] = 0
+    while q:
+        dist , now = heapq.heappop(q)
+
+        if distance[now] < dist:
+            continue
+        for i in graph:
+            cost = dist + i[1]
+            if cost < distance[i][0]:
+                distance[i][0] = cost
+                heapq.heappush(q, (cost , i[0]))
