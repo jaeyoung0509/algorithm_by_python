@@ -6,7 +6,6 @@ def solution(bridge_length, weight, truck_weights):
     while len(bridge) != 0:
         time += 1
         bridge.pop(0)
-        print(time , truck_weights , bridge)
         # truck이 남아 있을 경우
         if truck_weights:
             # 다리에 잇는 트럭과 트럭[0] 의 합이 10을 넘지 않을 때
