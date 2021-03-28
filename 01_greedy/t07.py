@@ -2,7 +2,7 @@ def soulution(n):
     steps = [(-2 , -1) , (-2 , 1) , (-1 ,-2) , (-1 , 2) , (1, -2) , (1, 2) , (2 ,-1 ) , (2, 1)]
     row = int(n[1])
     column = int(ord(n[0]))- int(ord('a')) + 1
-    answer = 0
+    answer = 0c
     print(column)
     for step in steps:
         next_row += step[0]
